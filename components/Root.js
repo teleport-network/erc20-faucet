@@ -114,14 +114,14 @@ let Root = ({children, setError}) => {
             label={'Star'}
             className={classes.chip}
             component='a'
-            href={`https://github.com/bybit-exchange/erc20-faucet`}
+            href={`https://github.com/teleport-exchange/erc20-faucet`}
             target={'_blank'}
             clickable
             color='secondary'
             variant='outlined'
           />
         </div>
-        <Typography className={classes.by}>{`bybit exchange`}</Typography>
+        <Typography className={classes.by}>{`teleport network`}</Typography>
       </div>
     </div>
   );
