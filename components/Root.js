@@ -114,7 +114,7 @@ let Root = ({children, setError}) => {
             label={'Star'}
             className={classes.chip}
             component='a'
-            href={`https://github.com/teleport-exchange/erc20-faucet`}
+            href={`https://github.com/teleport-network/erc20-faucet`}
             target={'_blank'}
             clickable
             color='secondary'
