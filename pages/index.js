@@ -73,7 +73,7 @@ function validate(address, amount, currentAmount) {
   if (!/^0x[0-9a-fA-F]{40}$/.test(address)) {
     stats.eAddress = true;
   }
-  if (amount < 1 || (parseInt(amount, 10) + parseInt(currentAmount, 10)) > 1000) {
+  if (amount < 1 || (parseInt(amount, 10) + parseInt(currentAmount, 10)) > 1000000) {
     stats.eAmount = true;
   }
   return stats;
@@ -150,7 +150,7 @@ let Index = ({
           </div>
           <TextField required id={'amount'} label={'Token Amount'} type={'number'}
             error={amountErr}
-            helperText={amountErr ? 'can only mint up to 1 - 1000 TUSDT' : ''}
+            helperText={amountErr ? 'can only mint up to 1 - 1000000 TUSDT' : ''}
             className={classes.input}
             fullWidth
             value={amount}
