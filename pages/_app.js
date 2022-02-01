@@ -31,7 +31,7 @@ class MyApp extends App {
         <ThemeProvider theme={theme}>
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />
-          <EtherProvider networks={[4]} ms={1000}>
+          <EtherProvider networks={[97]} ms={1000}>
             <Component {...pageProps} />
           </EtherProvider>
         </ThemeProvider>

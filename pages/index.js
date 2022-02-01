@@ -104,7 +104,7 @@ let Index = ({
   useEffect(() => {
     let interval;
     if (etherProvider) {
-      const contract = getContractInstance(etherProvider.getSigner(), 4);
+      const contract = getContractInstance(etherProvider.getSigner(), 97);
       setUsdtContract(contract);
 
       if (interval) {
@@ -183,7 +183,7 @@ let Index = ({
             {
               txs.map(tx => (
                 <div key={tx} className={classes.tx}>
-                  <a target={'_blank'} href={`https://rinkeby.etherscan.io/tx/${tx}`}>{short(tx, 8)}</a>
+                  <a target={'_blank'} href={`https://testnet.bscscan.com/tx/${tx}`}>{short(tx, 8)}</a>
                 </div>
               ))
             }

@@ -95,7 +95,7 @@ let Root = ({children, setError}) => {
     return (
       <div className={classes.dialogWrapper}>
         <Paper className={classes.dialog}>
-          <Typography variant={'h6'}>Support [Rinkeby testnet] only</Typography>
+          <Typography variant={'h6'}>Support [BSC testnet] </Typography>
           <Typography>Waiting for Ethereum wallet...</Typography>
           <CircularProgress />
         </Paper>
