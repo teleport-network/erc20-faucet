@@ -183,7 +183,7 @@ let Index = ({
             {
               txs.map(tx => (
                 <div key={tx} className={classes.tx}>
-                  <a target={'_blank'} href={`https://rinkeby.etherscan.io/tx/${tx}`}>{short(tx, 8)}</a>
+                  <a target={'_blank'} href={`https://blockscout.qa.davionlabs.com/tx/${tx}`}>{short(tx, 8)}</a>
                 </div>
               ))
             }
