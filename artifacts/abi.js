@@ -16,6 +16,6 @@ module.exports = {
     'event Approval(address indexed owner, address indexed spender, uint value)'
   ],
   networks: {
-    4: '0xB326Fea842F91a249738E07dD9d3cFF03Ecf3cD2'
+    9000: '0x23DdFa053073d923EFa2E8e077C70eb7239F9151'
   }
 };

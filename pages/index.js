@@ -104,7 +104,7 @@ let Index = ({
   useEffect(() => {
     let interval;
     if (etherProvider) {
-      const contract = getContractInstance(etherProvider.getSigner(), 4);
+      const contract = getContractInstance(etherProvider.getSigner(), 9000);
       setUsdtContract(contract);
 
       if (interval) {
