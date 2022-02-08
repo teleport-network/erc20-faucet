@@ -2,7 +2,7 @@ import * as ethers from 'ethers';
 import _get from 'lodash/get';
 import {abi, networks} from './abi';
 
-function getContractInstance(providerOrSigner, network = 9000) {
+function getContractInstance(providerOrSigner, network = 7001) {
   const addr = _get(networks, [network]);
   if (!abi || !addr) {
     throw new Error('abi or address not found.');
@@ -14,7 +14,7 @@ function getContractIface() {
   return new ethers.utils.Interface(abi);
 }
 
-function getAddr(network = 9000) {
+function getAddr(network = 7001) {
   return _get(networks, [network]);
 }
 
