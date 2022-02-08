@@ -73,14 +73,14 @@ function validate(address, amount, currentAmount) {
   if (!/^0x[0-9a-fA-F]{40}$/.test(address)) {
     stats.eAddress = true;
   }
-  if (amount < 1 || (parseInt(amount, 10) + parseInt(currentAmount, 10)) > 1000000) {
+  if (amount < 1 || (parseInt(amount, 10)) > 1000) {
     stats.eAmount = true;
   }
   return stats;
 }
 
 function toUSD(bn) {
-  return new BN(bn.toString()).dividedBy(1e6).toString();
+  return new BN(bn.toString()).dividedBy(1e18).toString();
 }
 
 let Index = ({
@@ -167,7 +167,7 @@ let Index = ({
               setAmountErr(eAmount);
               // console.log(`${eAddress}, ${eAmount}`);
               if (!eAddress && !eAmount) {
-                usdtContract.mint(address, new BN(amount).times(1e6).toString()).then(tx => {
+                usdtContract.mint(address, new BN(amount).times(1e18).toString()).then(tx => {
                   if (tx.hash) {
                     setTxs([...txs, tx.hash]);
                   }
