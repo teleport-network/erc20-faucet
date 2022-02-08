@@ -96,7 +96,7 @@ let Root = ({children, setError}) => {
       <div className={classes.dialogWrapper}>
         <Paper className={classes.dialog}>
           <Typography variant={'h6'}>Support [Rinkeby testnet] only</Typography>
-          <Typography>Waiting for Ethereum wallet...</Typography>
+          <Typography>Waiting for metamask wallet...</Typography>
           <CircularProgress />
         </Paper>
       </div>
