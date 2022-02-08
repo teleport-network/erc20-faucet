@@ -130,7 +130,7 @@ let Index = ({
   return (
     <Root>
       <div className={classes.header}>
-        <Typography className={classes.font}>Teleport Testnet USDT Faucet</Typography>
+        <Typography className={classes.font}>Rinkeby Testnet USDT Faucet</Typography>
       </div>
       <div className={classes.mainCont}>
         <Paper className={classes.inputCont}>
