@@ -12,3 +12,9 @@ testnet erc-20 USDT faucet
 - teleport
 - rinkeby
 - bsc testnet
+
+# run
+```
+yarn 
+yarn deploy
+```
