@@ -73,7 +73,7 @@ function validate(address, amount, currentAmount) {
   if (!/^0x[0-9a-fA-F]{40}$/.test(address)) {
     stats.eAddress = true;
   }
-  if (amount < 1 || (parseInt(amount, 10) + parseInt(currentAmount, 10)) > 999) {
+  if (amount < 1 || (parseInt(amount, 10)) > 999) {
     stats.eAmount = true;
   }
   return stats;
