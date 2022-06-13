@@ -80,7 +80,7 @@ function validate(address, amount, currentAmount) {
 }
 
 function toUSD(bn) {
-  return new BN(bn.toString()).dividedBy(1e18).toString();
+  return new BN(bn.toString()).dividedBy(1e6).toString();
 }
 
 let Index = ({
@@ -167,7 +167,7 @@ let Index = ({
               setAmountErr(eAmount);
               // console.log(`${eAddress}, ${eAmount}`);
               if (!eAddress && !eAmount) {
-                usdtContract.mint(address, new BN(amount).times(1e18).toString()).then(tx => {
+                usdtContract.mint(address, new BN(amount).times(1e6).toString()).then(tx => {
                   if (tx.hash) {
                     setTxs([...txs, tx.hash]);
                   }
